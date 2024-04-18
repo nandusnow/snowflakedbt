@@ -1,7 +1,7 @@
 {{
   config(
     materialized = "table",
-    schema="target_db"
+    schema="TEAMA"
   )
 }}
  select  count(*) as order_count,
