@@ -44,6 +44,8 @@ models:
         +schema: TEAMA
       target_db:
         +schema: TEAMA
+      prb:
+        +schema: TEAMA
 
         
 
