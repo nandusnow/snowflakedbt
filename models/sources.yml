@@ -1,6 +1,7 @@
 sources:
   - name: my_project
-    database: dev
-    schema: TEAMA
+    database: sample_db
+    schema: sample_schema
     tables:
       - name: customer
+      - name: orders
