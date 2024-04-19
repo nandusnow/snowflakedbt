@@ -9,8 +9,11 @@ FirstName,
 LastName,
 Company
 FROM (
-SELECT CustomerID, FirstName, LastName, Company,
+SELECT CustomerID,
+FirstName,
+LastName,
+Company,
 ROW_NUMBER() OVER (PARTITION BY CustomerID ORDER BY CustomerID) AS rn
-FROM customers
+FROM {{source("my_project",'customer')}}
 ) AS sub
 WHERE rn = 1

@@ -40,3 +40,8 @@ models:
     # Applies to all files under models/example/
     integration:
       +materialized: view
+      sample_db:
+        +schema: TEAMA
+      target_db:
+        +schema: TEAMA
+
