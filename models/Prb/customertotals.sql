@@ -1,6 +1,6 @@
 {{
   config(
-    materialized = "table",
+    materialized = "view",
     schema="TEAMA"
   )
 }}
@@ -26,4 +26,4 @@ WITH customertotal AS (
 )
 
 SELECT 
- count(*) as customercount,CUSTOMERID from customertotal group by all
+count(*) as customercount,CUSTOMERID from customertotal group by all
