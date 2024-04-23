@@ -24,6 +24,5 @@ WITH customertotal AS (
     ON 
         C.CUSTOMERID = S.CUSTOMERID
 )
-
 SELECT 
 count(*) as customercount,CUSTOMERID from customertotal group by all
