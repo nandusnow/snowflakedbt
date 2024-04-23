@@ -39,7 +39,7 @@ models:
   my_project:
     # Applies to all files under models/example/
     integration:
-      +materialized: view
+      +materialized: table
       sample_db:
         +schema: TEAMA
       target_db:
