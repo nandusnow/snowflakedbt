@@ -1,7 +1,8 @@
 {{
   config(
     materialized = "view",
-    schema="TEAMA"
+    schema="TEAMA",
+    cluster_by=['customerid']
   )
 }}
 WITH customertotal AS (
